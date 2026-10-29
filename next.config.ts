@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
     agentFeedback: true,
   },
   cacheComponents: true,
+  images: {
+    loader: "custom",
+    loaderFile: "./lib/cloudinary/loader.ts",
+  },
   partialPrefetching: true,
   turbopack: {
     rules: {
